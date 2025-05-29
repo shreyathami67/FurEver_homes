@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurEver Homes</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                    <h1>Welcome to <br>FurEver Homes</h1>
+                    <a href="account.html" class="btn">Get Started &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/ab2 copy.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!-----------footer----------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/googleplay.png">
+                    <img src="images/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-fur.jpg" >
+                <p>Our purpose is to give home to every animals and not just house.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61576869620870">Facebook</a></li>
+                    <li><a href="https://x.com/FurEver_Homes8">Twitter</li></a>
+                    <li><a href="https://www.instagram.com/furever_homes8/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC20XOtiAz22uNEYMav3JPJA">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025 - FurEver Homes. All rights reserved.</p>
+    </div>
+</div>
+<!-----------js for toggle menu---------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+<script>
+    function toggleHeart(icon) {
+        icon.classList.toggle("fa-heart");
+        icon.classList.toggle("fa-heart-o");
+        icon.style.color = icon.classList.contains("fa-heart") ? "red" : "black";
+    }
+    </script>    
+</body>
+</html>

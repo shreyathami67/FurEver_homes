@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurEver Homes</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Pets</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="suggest.html">Suggestions</a></li>
+                    <li><a href="vet.html">Veterinarians</a></li>
+                    <li><a href="add.html">Buy/Sell</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart2.png" width="40px" height="40px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                    <h1>From Shelter to Sofa <br>- Adopt Now</h1>
+                    <p>Saving one pet won't change the world, <br>but for the pet, the world will change forever</p>
+                    <a href="product.html" class="btn">Find your friend &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image2.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+<!-------Featured Categories------->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/golden retriver.jpeg">
+            </div>
+            <div class="col-3">
+                <img src="images/cat1.jpeg">
+            </div>
+            <div class="col-3">
+                <img src="images/duckling.jpeg">
+            </div>
+        </div>
+    </div>
+</div>
+    
+</div>
+<!------Featured Animals------>
+<div class="small-container">
+    <h2 class="title">Featured Animals</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="productdetails.html"><img src="images/cat 1.jpeg"></a>
+            <a href="productdetails.html"><h4>Name: Mochi </h4></a> 
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Available</p>
+            <h4>Breed: Persian</h4>
+            <p>Rs. 5000.00</p>
+        </div>
+        <div class="col-4">
+            
+            <a href="animal.html"><img src="images/german sheferd.jpeg"></a>
+            <a href="animal.html"><h4>Name: Zephyr </h4></a>
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Available</p>
+            <h4>Breed: German sheferd</h4>
+            <p>Rs. 10,000.00</p>
+        </div>
+        <div class="col-4">
+            <a href="animal1.html"><img src="images/juno3.jpg"></a>
+            <a href="animal1.html"><h4>Name: Juno </h4></a>
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Unavailable</p>
+            <h4>Breed: Unknown</h4>
+            <p>Rs. 3,000.00</p>
+        </div>
+        <div class="col-4">
+            <a href="animal2.html"><img src="images/rottweiler.jpg"></a>
+            <a href="animal2.html"></a><h4>Name: Bruno </h4></a>
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Available</p>
+            <h4>Breed: rottweiler</h4>
+            <p>Rs. 15,000.00</p>
+        </div>
+    </div>
+    <h2 class="title">New Born</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/bull.jpg">
+            <h4>Name: Max </h4>
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Available</p>
+            <h4>Breed: France bull dog</h4>
+            <p>Rs. 4,000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/hamster.jpg">
+            <h4>Name: Nimbus </h4>
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Available</p>
+            <h4>Breed: Hamster</h4>
+            <p>Rs. 1,000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/persian.jpg">
+            <h4>Name: Echo </h4>
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Available</p>
+            <h4>Breed: Persian Cat</h4>
+            <p>Rs. 3,000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/labrador.jpg">
+            <h4>Name: Charlie </h4>
+            <i class="fa fa-heart-o favorite" onclick="toggleHeart(this)"></i>
+            <p>Status: Available</p>
+            <h4>Breed: labrador</h4>
+            <p>Rs. 5,000.00</p>
+        </div>
+    </div>
+</div>
+<!------offer------>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/chiuaua.jpg" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on FurEver Homes</p>
+                <h1>Chihuahua</h1>
+                <small>The Chihuahua is one of the smallest dog breeds in the world, 
+                    but don’t let their size fool you! They are bold, lively, and 
+                    full of personality</small>
+                <br><a href="account.html" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------Testimonial------>
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>I'm Dr. Ram kumar Mandal. 
+                    I'm an expert veterinarian in the entire Jhapa region. 
+                    I have rescued so many pet animals.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/doc1.jpeg">
+                <h3>Dr. Ram kumar Mandal</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>I am Dr. Sushil kumar Poudel. 
+                    I'm an expert veterinarian in the entire Jhapa region. 
+                    I've been helping rescue stray animals for over 10 years.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/doc2.jpg">
+                <h3>Dr. Sushil kumar Poudel</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>my name is Dr. Dinesh kumar Yadav. 
+                    I'm an expert veterinarian in the entire Jhapa region. 
+                    I have rescued so many pet animals. Adoption brings joy to both families and pets.                </p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <img src="images/doc3.png">
+                <h3>Dr. Dinesh kumar Yadav</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------brands------------------>
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <a href="https://argoclinic.com/"><img src="images/argo.jpg"></a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.paw.com/"><img src="images/paw.jpg"></a>
+            </div>
+            <div class="col-5">
+                <a href="https://thegoodtreat.com/"><img src="images/tgt.jpg"></a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.instagram.com/pawzo/"><img src="images/pawzo.jpg"></a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.expertcity.co/bonpets.html"><img src="images/5.jpg"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------footer----------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/googleplay.png">
+                    <img src="images/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-fur.jpg" >
+                <p>Our purpose is to give home to every animals and not just house.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61576869620870">Facebook</a></li>
+                    <li><a href="https://x.com/FurEver_Homes8">Twitter</li></a>
+                    <li><a href="https://www.instagram.com/furever_homes8/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC20XOtiAz22uNEYMav3JPJA">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025 - FurEver Homes. All rights reserved.</p>
+    </div>
+</div>
+<!-----------js for toggle menu---------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+<script>
+function toggleHeart(icon) {
+    icon.classList.toggle("fa-heart");
+    icon.classList.toggle("fa-heart-o");
+    icon.style.color = icon.classList.contains("fa-heart") ? "red" : "black";
+
+    if (icon.classList.contains("fa-heart")) {
+        const card = icon.closest(".col-4");
+        const name = card.querySelector("h4").textContent.replace("Name: ", "");
+        const priceText = card.querySelector("p:last-of-type").textContent;
+        const price = parseInt(priceText.replace("Rs", "").replace(",", "").replace(".00", ""));
+        const image = card.querySelector("img").src;
+
+        const item = { name, price, image };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Avoid duplicates by checking if item already exists
+        if (!cart.some(i => i.name === name)) {
+            cart.push(item);
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+    }
+}
+</script>
+   
+</body>
+</html>

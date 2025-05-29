@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - FurEver Homes</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Pets</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="suggest.html">Suggestions</a></li>
+                    <li><a href="vet.html">Veterinarians</a></li>
+                    <li><a href="add.html">Buy/Sell</a></li>
+                    
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart2.png" width="40px" height="40px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+   
+<!---------cart items--------->
+<table>
+    <thead>
+        <tr>
+            <th>Animals</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody id="cart-items">
+        <!-- JS will inject items here -->
+    </tbody>
+
+</table>
+
+
+
+<!-----------footer----------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/googleplay.png">
+                    <img src="images/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-fur.jpg" >
+                <p>Our purpose is to give home to every animals and not just house.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61576869620870">Facebook</a></li>
+                    <li><a href="https://x.com/FurEver_Homes8">Twitter</li></a>
+                    <li><a href="https://www.instagram.com/furever_homes8/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC20XOtiAz22uNEYMav3JPJA">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025 - FurEver Homes. All rights reserved.</p>
+    </div>
+</div>
+<!-----------js for toggle menu---------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+<script>
+    function loadCart() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let container = document.getElementById("cart-items");
+    let total = 0;
+
+    container.innerHTML = "";
+
+    cart.forEach((item, index) => {
+        total += item.price;
+        container.innerHTML += `
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="${item.image}">
+                        <div>
+                            <p>${item.name}</p>
+                            <small>Price: Rs${item.price}</small>
+                            <br>
+                            <a href="#" onclick="removeItem(${index})">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>Rs${item.price}</td>
+            </tr>
+        `;
+    });
+
+    const tax = Math.floor(total * 0.13);
+    const grandTotal = total + tax;
+
+    document.getElementById("subtotal").innerHTML = `<strong>Rs${total}</strong>`;
+    document.getElementById("tax").innerHTML = `<strong>Rs${tax}</strong>`;
+    document.getElementById("total-price").innerHTML = `<strong>Rs${grandTotal}</strong>`;
+}
+
+
+    function removeItem(index) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    loadCart(); // reload the cart
+    }
+
+    window.onload = loadCart;
+</script>
+
+</body>
+</html>

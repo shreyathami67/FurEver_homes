@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - FurEver Homes</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Pets</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="suggest.html">Suggestions</a></li>
+                    <li><a href="vet.html">Veterinarians</a></li>
+                    <li><a href="add.html">Buy/Sell</a></li>
+                    
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart2.png" width="40px" height="40px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!-------single product details------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/german sheferd.jpeg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/german sheferd3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/german sheferd4.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/german sheferd5.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/german sheferd6.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-2">
+                <p>Home / Dog </p>
+                <h1> German Shepherd</h1>
+                <h4>Rs. 10,000</h4>
+                <a href="account2.html" class="btn">Adopt</a>
+                <a href="#" class="btn" onclick="saveToCart(event)">Save</a>
+                <h3>Pet details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>This is a German Shepherd. It is 1.5 years old. It is super friendly, healthy and obeys its owner. 
+                It does not have any diseases. Give them a home and a friend to yourself.</p>
+
+            </div>
+        </div>
+    </div>
+    <!---------Title--------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Animals</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+
+    <!--------products---------->
+
+    
+<div class="small-container">
+    
+    <div class="row">
+        <div class="col-4">
+            <img src="images/akita.jpeg">
+            <h4>Name: Mochi </h4>
+            <h4>Breed: Akita</h4>
+            <p>Rs.5,000</p>
+        </div>
+        <div class="col-4">
+            <img src="images/german sheferd.jpeg">
+            <h4>Name: Zephyr </h4>
+            <h4>Breed: German sheferd</h4>
+            <p>Rs. 4,000</p>
+        </div>
+        <div class="col-4">
+            <img src="images/pig.jpeg">
+            <h4>Name: Juno </h4>
+            <h4>Breed: Unknown</h4>
+            <p>Rs. 1,000</p>
+        </div>
+        <div class="col-4">
+            <img src="images/rottweiler.jpg">
+            <h4>Name: Bruno </h4>
+            <h4>Breed: rottweiler</h4>
+            <p>Rs. 5,000</p>
+        </div>
+    </div>
+    
+
+<!-----------footer----------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/googleplay.png">
+                    <img src="images/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-fur.jpg" >
+                <p>Our purpose is to give home to every animals and not just house.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61576869620870">Facebook</a></li>
+                    <li><a href="https://x.com/FurEver_Homes8">Twitter</li></a>
+                    <li><a href="https://www.instagram.com/furever_homes8/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC20XOtiAz22uNEYMav3JPJA">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025 - FurEver Homes. All rights reserved.</p>
+    </div>
+</div>
+<!-----------js for toggle menu---------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+<!---------js for product gallery-------->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
+<script>
+    function saveToCart(event) {
+        event.preventDefault(); // prevent the default <a> link behavior
+
+        const product = {
+            name: "German Shepherd",
+            price: 10000,
+            image: "images/german sheferd.jpeg"
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(product);
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Redirect to cart.html after saving
+        window.location.href = "cart.html";
+    }
+</script>
+
+
+</body>
+</html>
